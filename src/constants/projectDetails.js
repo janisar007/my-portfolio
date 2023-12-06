@@ -69,7 +69,7 @@ export const projectDetails = [
       "This is my portfolio, that showcase all my projects, skills and experiences",
     tags: ["Reactjs", "TailwindCSS", "Firebase", "JavaScript"],
     via: '/',
-    code: '/',
+    code: 'https://github.com/janisar007/my-portfolio',
   },
 ];
 
