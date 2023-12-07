@@ -2,7 +2,7 @@ import React from 'react'
 import Tag from './Tag'
 // import applicationImg from '../images/youtubeimage1.jpg'
 
-const Application = ({imgUrl, title, description, tags, via, code}) => {
+const Application = ({setShowBox, imgUrl, title, description, tags, via, code}) => {
 
     const openNewTab = (webLink) => {        
         window.open(webLink, '_blank');
@@ -26,7 +26,7 @@ const Application = ({imgUrl, title, description, tags, via, code}) => {
         </div>
 
         <div className='w-full flex justify-between text-white mt-2 text-sm'>
-            <button onClick={() => openNewTab(via)} className='bg-[#1034A6] py-[2px] px-[7px] rounded-md text-[0.85rem] hover:opacity-80'>View</button>
+            <button onClick={title == 'My Portfolio'? () => setShowBox(true) : () => openNewTab(via)} className='bg-[#1034A6] py-[2px] px-[7px] rounded-md text-[0.85rem] hover:opacity-80'>View</button>
             <button onClick={() => openNewTab(code)} className='bg-[#1034A6] py-[2px] px-[7px] rounded-md text-[0.85rem] hover:opacity-80'>Code</button>
         </div>
         

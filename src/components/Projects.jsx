@@ -7,7 +7,7 @@ import { getStorage, ref, listAll, getDownloadURL } from 'firebase/storage';
 import Application from "./Application";
 import { projectDetails } from '../constants/projectDetails.js'
 
-const Projects = () => {
+const Projects = ({setShowBox}) => {
   const [imageUrls, setImageUrls] = useState([]);
   // console.log(imageUrls);
 
@@ -46,7 +46,7 @@ const Projects = () => {
         <span className="text-white bg-[#306EE8] p-1 rounded-md">Projects</span>
       <div className="flex items-center justify-evenly flex-wrap">
 
-        {newProjectDetails.map((project) => <Application key={project.title} imgUrl={project.imgUrl} title={project.title} description={project.description} tags={project.tags} via={project.via} code={project.code}/>)}
+        {newProjectDetails.map((project) => <Application setShowBox={setShowBox} key={project.title} imgUrl={project.imgUrl} title={project.title} description={project.description} tags={project.tags} via={project.via} code={project.code}/>)}
       </div>
     </div>
   );

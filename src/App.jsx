@@ -1,4 +1,4 @@
-import React, {useRef} from "react";
+import React, {useRef, useState} from "react";
 import Header from "./components/Header";
 import ContactMeButton from "./components/ContactMeButton";
 import Projects from "./components/Projects";
@@ -6,10 +6,14 @@ import More from "./components/More";
 import Education from "./components/Education";
 import { ContactUs } from "./components/ContactUs";
 import Footer from "./components/Footer";
+import Box from "./components/Box";
 
 
 const App = () => {
   const contactRef = useRef(null);
+
+  const [showBox, setShowBox] = useState(false);
+
   const toContactUs = () => {
     contactRef.current.scrollIntoView({ behavior: 'smooth' });
   };
@@ -23,7 +27,10 @@ const App = () => {
         <p className="text-white text-[1.3rem] font-semibold">Hi, I am a Web Developer.</p>
 
       </div>
-      <Projects />
+
+      <Box showBox={showBox} setShowBox={setShowBox}/>
+
+      <Projects setShowBox={setShowBox}/>
       <More />
       <div className="w-full flex flex-col items-center">
         <Education />

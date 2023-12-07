@@ -246,7 +246,7 @@ export const educationDetails = [
     course: 'UP-Board(XII), Physics, Chemistry, Maths',
     duration: '2018-2019',
     grade: '8.1 %',
-    content: "I completed my class 12 Intermediate education at Saraswati Vidya Mandir, Gonda, where I studied Science with Computer Science.",
+    content: "I completed my class 12 Intermediate education at Saraswati Vidya Mandir, Gonda, where I studied Physics, Chemistry and Maths.",
   },
 
   {
@@ -254,6 +254,6 @@ export const educationDetails = [
     course: 'UP-Board(X), Physics, Chemistry, Maths',
     duration: '2016-2017',
     grade: '8.2 %',
-    content: "I completed my class 10 high school education at Saraswati Vidya Mandir, Gonda, where I studied Science with Computer Science.",
+    content: "I completed my class 10 high school education at Saraswati Vidya Mandir, Gonda, where I studied Physics, Chemistry and Maths.",
   },
 ];
