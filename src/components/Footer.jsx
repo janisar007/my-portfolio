@@ -26,7 +26,7 @@ const Footer = () => {
   const instaLink = "https://www.instagram.com/eat.code.repeat";
   const twitterLink = "https://twitter.com/eat_code_repeat";
   const linkedinLink = "https://www.linkedin.com/in/janisar-akhtar-13a8a724b/";
-  const resumeLink = "https://docs.google.com/document/d/1uih0_hfhpum4WgWBbFxECSZSAtk2L17k4HHzEbXt_wo/edit";
+  const resumeLink = "https://docs.google.com/document/d/1AJH9ljXXZIDLcJasVkUleKJQky4snBym/edit?usp=sharing&ouid=114971946337545881503&rtpof=true&sd=true";
   const githubLink = "https://github.com/janisar007";
 
   const openNewTab = (webLink) => {        

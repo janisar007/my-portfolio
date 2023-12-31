@@ -63,7 +63,7 @@ const Header = () => {
 
 
   const openNewTab = () => {  
-    const webLink = 'https://docs.google.com/document/d/1uih0_hfhpum4WgWBbFxECSZSAtk2L17k4HHzEbXt_wo/edit';   
+    const webLink = 'https://docs.google.com/document/d/1AJH9ljXXZIDLcJasVkUleKJQky4snBym/edit?usp=sharing&ouid=114971946337545881503&rtpof=true&sd=true';   
     window.open(webLink, '_blank');
   };
 
